@@ -1,0 +1,26 @@
+{
+  "name": "sharapov/plaintext-replacer",
+  "description": "",
+  "license": "GPL-3.0",
+  "type": "library",
+  "keywords": [
+
+  ],
+  "homepage": "https://github.com/sharapovweb/plaintext-replacer",
+  "authors": [
+    {
+      "name": "Alexander Sharapov",
+      "email": "alexander@sharapov.biz",
+      "homepage": "http://sharapov.biz",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sharapov\\PlaintextReplacer\\": "src/plaintext-replacer/"
+    }
+  }
+}
