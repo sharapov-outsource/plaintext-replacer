@@ -11,7 +11,7 @@ namespace Sharapov\PlaintextReplacer;
 
 class Url extends AbstractReplacer
 {
-  private function _makeUrlClickable($matches)
+  private static function _makeUrlClickable($matches)
   {
     $ret = '';
     $url = $matches[2];
@@ -24,10 +24,10 @@ class Url extends AbstractReplacer
       $url = substr($url, 0, strlen($url) - 1);
     }
 
-    return $matches[1] . "<a href=\"$url\" rel=\"nofollow\">$url</a>" . $ret;
+    return $matches[1] . '<a href="' . $url . '" rel="nofollow" target="_blank">' . $url . '</a>' . $ret;
   }
 
-  private function _makeFtpClickable($matches)
+  private static function _makeFtpClickable($matches)
   {
     $ret = '';
     $dest = $matches[2];
@@ -41,14 +41,14 @@ class Url extends AbstractReplacer
       $dest = substr($dest, 0, strlen($dest) - 1);
     }
 
-    return $matches[1] . "<a href=\"$dest\" rel=\"nofollow\">$dest</a>" . $ret;
+    return $matches[1] . '<a href="' . $dest . '" rel="nofollow" target="_blank">' . $dest . '</a>' . $ret;
   }
 
-  private function _makeEmailClickable($matches)
+  private static function _makeEmailClickable($matches)
   {
     $email = $matches[2] . '@' . $matches[3];
 
-    return $matches[1] . "<a href=\"mailto:$email\">$email</a>";
+    return $matches[1] . '<a href="mailto:' . $email . '">' . $email . '</a>';
   }
 
   public static function convert($ret)
