@@ -7,14 +7,14 @@ For composer installation, add:
 
 ```json
 "require": {
-    "sharapov/PlaintextReplacer": "dev-master"
+    "sharapov/plaintext-replacer": "dev-master"
 },
 ```
 
 to your composer.json file and update your dependencies. Or you can run:
 
 ```sh
-$ composer require sharapov/php-ffmpeg-extensions
+$ composer require sharapov/sharapov/plaintext-replacer
 ```
 
 Usage:
