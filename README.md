@@ -14,7 +14,7 @@ For composer installation, add:
 to your composer.json file and update your dependencies. Or you can run:
 
 ```sh
-$ composer require sharapov/sharapov/plaintext-replacer
+$ composer require sharapov/plaintext-replacer
 ```
 
 Usage:
