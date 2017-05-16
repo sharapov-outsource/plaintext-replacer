@@ -29,6 +29,8 @@ Links
 
 [Composer](https://getcomposer.org/)
 
-[GitHub](https://github.com/sharapovweb/PlaintextReplacer)
+[GitHub](https://github.com/sharapov-outsource/plaintext-replacer
+)
 
-[Packagist](https://packagist.org/packages/sharapov/PlaintextReplacer)
+[Packagist](https://packagist.org/packages/sharapov/plaintext-replacer
+)
